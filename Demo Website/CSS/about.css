@@ -607,3 +607,234 @@
     margin-top: 30px;
 }
 
+@media screen and (max-width: 576px) {
+
+  /* HEADER */
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .header .logo h2 {
+    font-size: 22px;
+  }
+
+  .header .logo span{
+    font-size: 28px;
+  }
+  .menu ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .menu ul li a {
+    font-size: 16px;
+  }
+
+  /* ABOUT SECTION */
+  .section1 {
+    padding: 30px 15px;
+  }
+
+  .section1 h1 {
+    font-size: 28px;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-section .info,
+  .about-section .img {
+    width: 90%;
+    margin:auto;
+  }
+
+  .about-section .info {
+    font-size: 16px;
+  }
+
+  .about-section .img img {
+    height: auto;
+  }
+
+  /* TEAM SECTION */
+  .section2 {
+    padding: 40px 15px;
+    min-height: auto;
+  }
+
+  .section2 h1 {
+    font-size: 26px;
+  }
+
+  .section2 p {
+    font-size: 16px;
+  }
+
+  .team-members {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .member1, .member2,
+  .member3, .member4 {
+    width: 100%;
+  }
+
+  .member1 h3,
+  .member2 h3,
+  .member3 h3,
+  .member4 h3 {
+    font-size: 20px;
+  }
+
+  .member1 p,
+  .member2 p,
+  .member3 p,
+  .member4 p {
+    font-size: 14px;
+  }
+
+  /* CONTACT FORM */
+  .contact .c-name,
+  .contact form .c-field {
+    flex-direction: row;
+  }
+
+  .c-field input[type="text"] {
+    width: 90%;
+    margin-right: 10px;
+  }
+
+  .c-btn button {
+    width: 100%;
+    float: none;
+  }
+
+  /* FOOTER */
+  .footer-contain {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-addr,
+  .footer-menu,
+  .footer-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social {
+  margin-left: 0;
+  justify-content: center;
+}
+
+}
+
+@media screen and (min-width:577px) and (max-width: 768px) {
+
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .header .logo h2 {
+    font-size: 22px;
+  }
+
+  .header .logo span{
+    font-size: 28px;
+  }
+  .menu ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .menu ul li a {
+    font-size: 16px;
+  }
+
+  .section1 h1 {
+    font-size: 32px;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-section .info,
+  .about-section .img {
+    width: 100%;
+  }
+
+  .about-section .info {
+    font-size: 18px;
+  }
+
+  /* TEAM */
+  .team-members {
+    flex-wrap: wrap;
+  }
+
+  .member1, .member2,
+  .member3, .member4 {
+    width: 45%;
+  }
+
+  /* FOOTER */
+  .footer-contain {
+    flex-wrap: wrap;
+  }
+
+  .footer-addr,
+  .footer-menu,
+  .footer-content {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .header .logo h2 {
+    font-size: 24px;
+  }
+
+  .header .logo span{
+    font-size: 30px;
+  }
+
+  .menu ul li a {
+    font-size: 18px;
+  }
+
+  .section1 h1 {
+    font-size: 36px;
+  }
+
+  .about-section .info {
+    font-size: 20px;
+  }
+  .section1 h1 {
+    font-size: 36px;
+  }
+
+  .about-section .info {
+    font-size: 20px;
+  }
+
+  .member1, .member2,
+  .member3, .member4 {
+    width: 40%;
+  } 
+
+  .footer-contain {
+    flex-wrap: wrap;
+  }
+
+  .footer-addr,
+  .footer-menu,
+  .footer-content {
+    width: 45%;
+  }
+}

@@ -1064,8 +1064,8 @@ body {
   }
 
   .cart1, .cart2, .cart3 {
-    width: 90%;
-    margin-left: 20px;
+    width: 80%;
+    margin-left: 50px;
     margin-top: 20px;
   }
 
@@ -1097,7 +1097,8 @@ body {
   }
 
   .service1, .service2, .service3, .service4 {
-    width: 100%;
+    width: 80%;
+    margin-left: 50px;
   }
 
   /* CONTACT FORM */

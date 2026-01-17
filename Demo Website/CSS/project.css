@@ -69,14 +69,9 @@
     min-height: 50px;
     display: grid;
     grid-area: header-menu;
-    /* background-color: #333; */
-    /* float: right; */
-    /* justify-content: right; */
 }
 
 .menu ul{
-    /* padding-right: 40px; */
-    /* justify-content: right; */
     display: flex;
     justify-content: flex-end;
 }
@@ -478,3 +473,82 @@
     margin-top: 30px;
 }
 
+@media screen and (max-width: 576px) {
+   /* HEADER */
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .header .logo h2 {
+    font-size: 22px;
+  }
+
+  .header .logo span{
+    font-size: 28px;
+  }
+  .menu ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .menu ul li a {
+    font-size: 16px;
+  }
+
+
+  /* ABOUT / GENERAL FIX */
+  .about-section,
+  .team-members,
+  .footer-contain,
+  .contact .c-name,
+  .contact form .c-field {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* REMOVE DANGEROUS MARGINS */
+  .about-section .info,
+  .about-section .img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* CONTACT INPUTS */
+  .c-field input[type="text"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* BUTTON */
+  .c-btn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .c-btn button {
+    width: 100%;
+    float: none;
+  }
+
+  /* FOOTER */
+  .footer-addr,
+  .footer-menu,
+  .footer-content,
+  .map {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* SOCIAL ICON FIX */
+  .social {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  /* MAP FIX */
+  .map iframe {
+    width: 100%;
+    max-width: 100%;
+  }
+}
