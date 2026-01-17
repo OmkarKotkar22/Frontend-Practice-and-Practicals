@@ -1,0 +1,56 @@
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;   /* Only applies to main + sidebar row */
+  grid-template-areas:
+    "header header"
+    "main sidebar"
+    "twins twins"
+    "footer footer";
+  gap: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+/* Sections */
+.header {
+  grid-area: header;
+  background: #64b5f6;
+  padding: 40px;
+  text-align: center;
+}
+
+.main-content {
+  grid-area: main;
+  background: #81c784;
+  padding: 60px;
+  text-align: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #ba68c8;
+  padding: 60px;
+  text-align: center;
+}
+
+/* NESTED GRID for equal twins */
+.twins {
+  grid-area: twins;
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* This fixes your issue */
+  gap: 10px;
+}
+
+.twin {
+  background: #ffa726;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  background: #1565c0;
+  padding: 40px;
+  text-align: center;
+}

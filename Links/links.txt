@@ -1,0 +1,38 @@
+*****1.Ajinkya sir GitHub link*****
+
+https://github.com/Ajinkya-Ban/July_25_UI
+
+
+*****2. for generate the coordinates for img Mappimg*****
+
+https://www.image-map.net/   
+
+
+*****3. for taking high quality images*****
+
+https://www.freepik.com/?sign-up=google
+
+
+*****4. for image slider*****
+https://imageslidergenerator.shahmirfaisal.com/
+
+Icons: https://iconscout.com/unicons
+Fonts: https://fonts.google.com/
+JS Functions: https://github.com/bedimcode/responsi...
+Swiper: https://swiperjs.com/ (Check recent update)
+Remove the background: https://www.remove.bg/
+HSL color: https://www.w3schools.com/colors/colo...
+Blob Generator: https://www.blobmaker.app/
+
+
+*****5. for special effects*****
+https://animate.style/
+
+
+Google font 
+Amrana
+Exo 2
+PT Sans Narrow
+Edu SA Beginner
+Yanone Kaffeesatz
+

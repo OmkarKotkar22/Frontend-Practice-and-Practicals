@@ -1,0 +1,711 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    min-height: 530px;
+    /* background-color: orange; */
+    margin: auto;
+}
+.flex-container1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-height: 530px;
+    /* background-color: aquamarine; */
+}
+.flex-container2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-height: 600px;
+    /* background-color: rgb(36, 90, 72); */
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    min-height: 190px;
+    /* background: #8b3030; */
+    border: 2px dotted lightgray;
+}
+.flex-container p{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+/*===============================     Flex Start      ============================*/
+.rows1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 170px;
+    /* background-color: burlywood; */
+}
+.flex-container .rows1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    min-height: 35px;
+    /* background-color: rgb(255, 0, 238); */
+    gap: 15px;
+}
+.row1 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: blue;
+}
+.row1 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 7%;
+    background-color: blue;
+} 
+.row1 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: blue;
+}
+.row1 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 47%;
+    background-color: blue;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+    /* background-color: rgb(255, 0, 238); */
+    gap: 15px;
+    margin-top: 10px;
+}
+.row2 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 26%;
+    background-color: blue;
+}
+.row2 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 12%;
+    background-color: blue;
+}  
+.row2 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 4%;
+    background-color: blue;
+}
+.row2 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    background-color: blue;
+}
+.row3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+    /* background-color: rgb(255, 0, 238); */
+    gap: 15px;
+    margin-top: 10px;
+}
+.row3 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 24%;
+    background-color: blue;
+}
+.row3 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 4%;
+    background-color: blue;
+}   
+.row3 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 21%;
+    background-color: blue;
+}
+.row3 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    background-color: white;
+}
+/*=============================== Center============================*/
+.rows2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 170px;
+    /* background-color: burlywood; */
+}
+.flex-container .rows2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    min-height: 35px;
+    /* background-color: rgb(255, 0, 238); */
+    gap: 15px;
+}
+.row1 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: blue;
+}
+.row1 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 7%;
+    background-color: blue;
+}  
+.row1 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: blue;
+}
+.row1 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 47%;
+    background-color: blue;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+    /* background-color: rgb(255, 0, 238); */
+    gap: 15px;
+    margin-top: 10px;
+}
+.row2 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 26%;
+    background-color: blue;
+}
+.row2 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 12%;
+    background-color: blue;
+}   
+.row2 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 4%;
+    background-color: blue;
+}
+.row2 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    background-color: blue;
+}
+.row3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+    /* background-color: rgb(255, 0, 238); */
+    gap: 15px;
+    margin-top: 10px;
+}
+.row3 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 24%;
+    background-color: blue;
+}
+.row3 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 4%;
+    background-color: blue;
+}    
+.row3 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 21%;
+    background-color: blue;
+}
+.row3 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    background-color: white;
+}
+/*=============================== Space Between ============================*/
+.rows3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 170px;
+    /* background-color: burlywood; */
+}
+.flex-container .rows3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    min-height: 35px;
+    /* background-color: rgb(255, 0, 238); */
+    gap: 15px;
+}
+.row1 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: blue;
+}
+.row1 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 7%;
+    background-color: blue;
+}  
+.row1 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: blue;
+}
+.row1 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 47%;
+    background-color: blue;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+    /* background-color: rgb(255, 0, 238); */
+    gap: 15px;
+    margin-top: 10px;
+}
+.row2 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 26%;
+    background-color: blue;
+}
+.row2 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 12%;
+    background-color: blue;
+}  
+.row2 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 4%;
+    background-color: blue;
+}
+.row2 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    background-color: blue;
+}
+.row3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+    /* background-color: rgb(255, 0, 238); */
+    gap: 15px;
+    margin-top: 10px;
+}
+.row3 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 24%;
+    background-color: blue;
+}
+.row3 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 4%;
+    background-color: blue;
+}    
+.row3 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 21%;
+    background-color: blue;
+}
+.row3 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    background-color: white;
+}
+/*=============================== Space Between ============================*/
+.rows4{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 170px;
+    /* background-color: burlywood; */
+}
+.flex-container .rows4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: space-between; */
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    min-height: 35px;
+    /* background-color: rgb(255, 0, 238); */
+    gap: 15px;
+}
+.row1 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: blue;
+}
+.row1 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 7%;
+    background-color: blue;
+}  
+.row1 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: blue;
+}
+.row1 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 47%;
+    background-color: blue;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+    /* background-color: rgb(255, 0, 238); */
+    gap: 15px;
+    margin-top: 10px;
+}
+.row2 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 26%;
+    background-color: blue;
+}
+.row2 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 12%;
+    background-color: blue;
+}   
+.row2 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 4%;
+    background-color: blue;
+}
+.row2 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    background-color: blue;
+}
+.row3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+    /* background-color: rgb(255, 0, 238); */
+    gap: 15px;
+    margin-top: 10px;
+}
+.row3 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 24%;
+    background-color: blue;
+}
+.row3 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 4%;
+    background-color: blue;
+}    
+.row3 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 21%;
+    background-color: blue;
+}
+.row3 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    background-color: white;
+}
+/*=============================== Stretch ============================*/
+.rows5{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    min-height: 170px;
+    /* background-color: burlywood; */
+}
+.flex-container .rows5{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    align-items: stretch;
+}
+.rows5 .row1{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    min-height: 35px;
+    gap: 15px;
+}
+.row1 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: blue;
+}
+.row1 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 7%;
+    background-color: blue;
+}   
+.row1 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: blue;
+}
+.row1 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 47%;
+    background-color: blue;
+}
+.rows5 .row2{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    min-height: 35px;
+    gap: 15px;
+    margin-top: 10px;
+}
+.row2 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 26%;
+    background-color: blue;
+}
+.row2 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 12%;
+    background-color: blue;
+}  
+.row2 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 4%;
+    background-color: blue;
+}
+.row2 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    background-color: blue;
+}
+.rows5 .row3{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    min-height: 35px;
+    gap: 15px;
+    margin-top: 10px;
+}
+.row3 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 24%;
+    background-color: blue;
+}
+.row3 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 4%;
+    background-color: blue;
+}    
+.row3 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 21%;
+    background-color: blue;
+}
+.row3 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    background-color: white;
+}
+/*=============================== Space Around ============================*/
+.rows6{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 170px;
+    /* background-color: burlywood; */
+}
+.flex-container .rows6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    min-height: 35px;
+    gap: 15px;
+}
+.row1 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: blue;
+}
+.row1 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 7%;
+    background-color: blue;
+} 
+.row1 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: blue;
+}
+.row1 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 47%;
+    background-color: blue;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+    gap: 15px;
+    margin-top: 10px;
+}
+.row2 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 26%;
+    background-color: blue;
+}
+.row2 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 12%;
+    background-color: blue;
+}  
+.row2 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 4%;
+    background-color: blue;
+}
+.row2 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    background-color: blue;
+}
+.row3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+    gap: 15px;
+    margin-top: 10px;
+}
+.row3 .col1{
+    display: flex;
+    flex-direction: row;
+    width: 24%;
+    background-color: blue;
+}
+.row3 .col2{
+    display: flex;
+    flex-direction: row;
+    width: 4%;
+    background-color: blue;
+}    
+.row3 .col3{
+    display: flex;
+    flex-direction: row;
+    width: 21%;
+    background-color: blue;
+}
+.row3 .col4{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    background-color: white;
+}

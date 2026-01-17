@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    width: 80%;
+    min-height: 500px;
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+.container .header{
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(165, 246, 219);
+    margin: auto;
+    text-align: center;
+}
+
+.header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.header a{
+    font-size: larger;
+    color: rgb(15, 11, 11);
+    text-decoration: none;
+}
+
+.header a:hover{
+    border-bottom:2px solid red;
+    color: brown;
+}
+
+.header a{
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navigation{
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(246, 165, 188);
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.navigation ul, li, p{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.navigation a{
+    font-size: larger;
+    color: rgb(15, 11, 11);
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    border-bottom:2px solid red;
+    color: brown;
+}
+
+.navigation a{
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.box1{
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+.box1 img{
+    width: 50%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.box2{
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+.box2 img{
+    width: 50%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+.drop-cap::first-letter {
+    font-size: 35px;
+    float: left;
+    margin-right: 0.1em;
+    line-height: 0.5;
+}
+
+.box3{
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+.box3 img{
+    width: 50%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+.drop-cap::first-letter {
+    font-size: 35px;
+    float: left;
+    margin-right: 0.1em;
+    line-height: 0.5;
+}
+
+.box4{
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+.box4 img{
+    width: 50%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+.drop-cap::first-letter {
+    font-size: 35px;
+    float: left;
+    margin-right: 0.1em;
+    line-height: 0.5;
+}
+
+.box6{
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+.box6 img{
+    width: 50%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+.drop-cap::first-letter {
+    font-size: 35px;
+    float: left;
+    margin-right: 0.1em;
+    line-height: 0.5;
+}
+
+.box7{
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+.box7 img{
+    width: 50%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+.drop-cap::first-letter {
+    font-size: 35px;
+    float: left;
+    margin-right: 0.1em;
+    line-height: 0.5;
+}
+
+.box8{
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+.box8 img{
+    width: 50%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+.drop-cap::first-letter {
+    font-size: 35px;
+    float: left;
+    margin-right: 0.1em;
+    line-height: 0.5;
+}
+
+.box9{
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+.box9 img{
+    width: 50%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+.drop-cap::first-letter {
+    font-size: 35px;
+    float: left;
+    margin-right: 0.1em;
+    line-height: 0.5;
+}
+
+.box10{
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+.box10 img{
+    width: 50%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+.drop-cap::first-letter {
+    font-size: 35px;
+    float: left;
+    margin-right: 0.1em;
+    line-height: 0.5;
+}
+
+

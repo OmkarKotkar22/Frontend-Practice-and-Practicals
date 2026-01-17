@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple forms</title>
+    <link rel="stylesheet" href="./css/multi-form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h2>Select you favorite color</h2>
+            <form action="">
+                <label for="favColor">Pick Color:</label><br><br>
+                <input type="color" id="favColor" name="favColor"><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="box2">
+            <h2>Select Volume Level</h2>
+            <form action="">
+                <label for="volume">Volume: </label><br>
+                <input type="range" id="volume" name="volume" min="0" max="100" value="50" oninput="showValue(this.value)">
+                <div class="valueDisplay">Selected: <span id="output">50</span></div>
+                <button>Submit</button>
+            </form>
+
+            <script>
+                function showValue(val)
+                {
+                    document.getElementById("output").textContent = val;
+                }
+            </script>
+        </div>
+
+        <div class="box3">
+            <h2>Seach anything</h2>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="">Search:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="search" autocomplete="off" name="query" placeholder="Type something to search...">
+                        </td>
+                    </tr>
+                </table>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+    width: 80%;
+    min-height: 530px;
+    margin: auto;
+    background: url(https://img.freepik.com/free-photo/silhouette-photography-trees_395237-199.jpg?semt=ais_incoming&w=740&q=80);
+    background-size: 100% 100%;
+}
+
+.header-div{
+    width: 100%;
+    min-height: 70px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    flex-basis: 100%;
+    min-height: 70px;
+}
+
+.logo h2{
+    padding:20px;
+    color: orange;
+}
+
+.nav ul{
+  flex-basis: 100%;  
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    padding: 10px;
+}
+
+.nav a:hover{
+    background-color: bisque;
+    color: black;
+    border-radius: 10px;
+}
+
+.search{
+    flex-basis: 100%;
+    padding: 20px 0 25px 25px;
+}
+
+.search input{
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+.search button{
+    padding: 5px;
+    background-color: orange;
+    border: none;
+}
+
+.search a{
+    color: black;
+    text-decoration: none;
+}
+
+.search button{
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.search button:hover{
+    background-color: bisque;
+    color: black;
+    border-radius: 10px;
+}
+
+.contact-div{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+}
+
+.page-info{
+    flex-direction: row;
+    
+} */
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background: url(https://img.freepik.com/free-photo/silhouette-photography-trees_395237-199.jpg?semt=ais_incoming&w=740&q=80);
+  background-size: 100% 100%;
+  width: 80%;
+  min-height: 530px;
+  border: 1px solid #000;
+  margin: auto;
+}
+.header-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  /* background-color: black;    */
+}
+.header-div .logo {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+}
+.logo h2 {
+  color: white;
+  padding: 20px;
+}
+.header-div .nav {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+.nav ul li a:hover {
+  background-color: #255362;
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+
+.search input{
+    display: flex;
+    margin-top: 15px;
+    height: 30px;
+}
+
+.search button{
+    display: flex;
+    /* margin-left: 0; */
+    margin: 15px;
+    /* padding-left: 0; */
+    padding: 5px;
+    border: none;
+}
+
+.search a{
+    text-decoration: none;
+    color: black;
+}
+
+.search button{
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.search button:hover{
+    background-color: bisque;
+    color: black;
+    border-radius: 10px;
+}
+
+.content-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: lightgray;
+  min-height: 450px;
+  width: 100%;
+}
+

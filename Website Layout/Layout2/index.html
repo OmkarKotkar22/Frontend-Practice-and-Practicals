@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= width-device, initial-scale=1.0">
+        <link rel="icon" href="./Images/web-developer.png" type="image/x-icon" />
+        <title>Web Developer</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="logo">
+                    <img src="./Images/web-developer.png" alt="Company Logo">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="Home">Home</a></li>
+                        <li><a href="About">About</a></li>
+                        <li><a href="Galary">Galary</a></li>
+                        <li><a href="Blog">Services</a></li>
+                        <li><a href="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <section class="section1">
+              <marquee behavior="" direction="left">
+                  <p>Welcome to Our Coder Website!</p>
+              </marquee>
+            </section>
+
+            <section class="section2">  
+                <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="./Images/slider1.png" style="width:100%">
+                  <div class="text">.</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="./Images/slider2.png" style="width:100%">
+                  <div class="text">.</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="./Images/slider3.png" style="width:100%">
+                  <div class="text">.</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+            </section>
+
+            <section class="bar-cont">
+                <div class="bar">
+                    <img src="./Images/slider1.png" alt="Hiring Image">
+                </div>
+                <div class="cont">
+                    <section class="section3">
+                        <h2>About Us</h2>
+                        <div class="about-paragraph">
+                            <p>We are a team of passionate web developers dedicated to creating stunning and functional websites. Our mission is to help businesses establish a strong online presence through innovative design and cutting-edge technology. Web development is the art of building and maintaining websites, encompassing everything from simple static pages to complex web applications. It involves three core pillars: HTML for structure, CSS for presentation and style, and JavaScript (JS) for interactivity and dynamic behavior. Front-end development focuses on the user-facing side, ensuring a great User Experience (UX). Back-end development manages the server, application logic, and databases, making the site functional. A great developer understands how these parts work together to create a seamless, accessible, and high-performing website.</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

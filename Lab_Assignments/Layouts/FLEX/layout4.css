@@ -1,0 +1,682 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+div{
+    border: 0.2px solid #a7a6a6;
+}
+
+.main{
+    width: 80%;
+    min-height: 80px;
+    margin: auto;
+    border: 1px solid #000;
+    gap: 10px;
+}
+
+.rows{
+    gap: 5px;
+}
+
+.row1{
+    width: 100%;
+    min-height: 30px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row1 .col1{
+    width: 100%;
+    min-height: 30px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.row2{
+    width: 100%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row2 .col1{
+    width: 50%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row2 .col2{
+    width: 50%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row3{
+    width: 100%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row3 .col1{
+    width: 33.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row3 .col2{
+    width: 33.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row3 .col3{
+    width: 33.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row4{
+    width: 100%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row4 .col1{
+    width: 25%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row4 .col2{
+    width: 25%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row4 .col3{
+    width: 25%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row4 .col4{
+    width: 25%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row5{
+    width: 100%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row5 .col1{
+    width: 20%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row5 .col2{
+    width: 20%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row5 .col3{
+    width: 20%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row5 .col4{
+    width: 20%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row5 .col5{
+    width: 20%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row6{
+    width: 100%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row6 .col1{
+    width: 16.66%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row6 .col2{
+    width: 16.66%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row6 .col3{
+    width: 16.66%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row6 .col4{
+    width: 16.66%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row6 .col5{
+    width: 16.66%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row6 .col6{
+    width: 16.66%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row7{
+    width: 100%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row7 .col1{
+    width: 14.28%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row7 .col2{
+    width: 14.28%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row7 .col3{
+    width: 14.28%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row7 .col4{
+    width: 14.28%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row7 .col5{
+    width: 14.28%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row7 .col6{
+    width: 14.28%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row7 .col7{
+    width: 14.28%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row8{
+    width: 100%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row8 .col1{
+    width: 12.5%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row8 .col2{
+    width: 12.5%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row8 .col3{
+    width: 12.5%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row8 .col4{
+    width: 12.5%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row8 .col5{
+    width: 12.5%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row8 .col6{
+    width: 12.5%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row8 .col7{
+    width: 12.5%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row8 .col7{
+    width: 12.5%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row8 .col8{
+    width: 12.5%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row9{
+    width: 100%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row9 .col1{
+    width: 11.11%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row9 .col2{
+    width: 11.11%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row9 .col3{
+    width: 11.11%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row9 .col4{
+    width: 11.11%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row9 .col5{
+    width: 11.11%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row9 .col6{
+    width: 11.11%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row9 .col7{
+    width: 11.11%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row9 .col8{
+    width: 11.11%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row9 .col9{
+    width: 11.11%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row10{
+    width: 100%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row10 .col1{
+    width: 10%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row10 .col2{
+    width: 10%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row10 .col3{
+    width: 10%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row10 .col4{
+    width: 10%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row10 .col5{
+    width: 10%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row10 .col6{
+    width: 10%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row10 .col7{
+    width: 10%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row10 .col8{
+    width: 10%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row10 .col9{
+    width: 10%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row10 .col10{
+    width: 10%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row11{
+    width: 100%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row11 .col1{
+    width: 9.09%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row11 .col2{
+    width: 9.09%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row11 .col3{
+    width: 9.09%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row11 .col4{
+    width: 9.09%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row11 .col5{
+    width: 9.09%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row11 .col6{
+    width: 9.09%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row11 .col7{
+    width: 9.09%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row11 .col8{
+    width: 9.09%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row11 .col9{
+    width: 9.09%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row11 .col10{
+    width: 9.09%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row11 .col11{
+    width: 9.09%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row12{
+    width: 100%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.row12 .col1{
+    width: 8.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row12 .col2{
+    width: 8.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row12 .col3{
+    width: 8.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row12 .col4{
+    width: 8.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row12 .col5{
+    width: 8.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row12 .col6{
+    width: 8.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row12 .col7{
+    width: 8.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row12 .col8{
+    width: 8.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row12 .col9{
+    width: 8.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row12 .col10{
+    width: 8.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row12 .col11{
+    width: 8.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.row12 .col12{
+    width: 8.33%;
+    min-height: 30px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}

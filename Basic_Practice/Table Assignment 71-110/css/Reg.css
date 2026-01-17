@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 60%;
+    min-height: 550px;
+    background-color: #f2f2f2;
+    margin: auto;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #E143F5, #6CCADE);
+}
+
+.container .cross{
+    text-align: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 15px;
+}
+
+.container .table{
+    width: 90%;
+    margin-left: 15%;
+    border-collapse: collapse;
+}
+
+.container  .label{
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    margin: 15px 0 0 50px;
+}
+
+.container form input[type="text"],
+.container form input[type="email"],
+.container form input[type="password"]{
+    margin: 10px 0 15px 50px;
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: lightcyan;
+}
+
+.container .btn{
+    width:30%;
+    min-height: 50px;
+    margin:25px 0 0 120px;
+    background:linear-gradient(to left, #6CCADE, #E143F5) ;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.container .btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.container .btn:hover{
+    background:linear-gradient(to right, #6CCADE, #E143F5);
+    transition: 0.3s ease-in-out;
+    padding: 5px;
+}
