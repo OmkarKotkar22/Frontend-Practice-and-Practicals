@@ -17,8 +17,8 @@
   <link rel="stylesheet"
      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
-    <link rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -27,9 +27,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
 </head>
 
 <body>
+
+  
   <div class="container-main">
     <div class="box">
       <header class="header">
@@ -37,14 +43,18 @@
           <h2><a href="index.html"><span>A</span>utono</a></h2>
         </div>
 
-        <div class="menu">
+        <div class="menu-toggle" id="menu-toggle">&#9776;
+        </div>
+
+        <div class="menu" id="menu">
           <ul>
             <li class="wow animate__animated animate__zoomIn"><a href="index.html">Home</a></li>
             <li class="wow animate__animated animate__zoomIn"><a href="about.html">About</a></li>
             <li class="wow animate__animated animate__zoomIn"><a href="#services">Services</a></li>
             <li class="wow animate__animated animate__zoomIn"><a href="project.html">Project</a></li>
             <li class="wow animate__animated animate__zoomIn"><a href="#contact">Contact</a></li>
-            <li class="wow animate__animated animate__zoomIn"><a href="login.html"><span class="login">Log in</span></a></li>
+            <li class="wow animate__animated animate__zoomIn"><a href="login.html">Login</a></li>
+            
           </ul>
         </div>
       </header>
@@ -316,8 +326,15 @@
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
     }, false);
   })();
-</script>
-<script>
+
+
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+
     new WOW().init();
 </script>
 </body>
