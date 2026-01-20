@@ -30,21 +30,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header">
+      <header class="header">
         <div class="logo wow animate__animated animate__zoomIn">
           <h2><a href="index.html"><span>A</span>utono</a></h2>
         </div>
-        <div class="menu">
+
+        <div class="menu-toggle" id="menu-toggle">&#9776;
+        </div>
+
+        <div class="menu" id="menu">
           <ul>
             <li class="wow animate__animated animate__zoomIn"><a href="index.html">Home</a></li>
             <li class="wow animate__animated animate__zoomIn"><a href="about.html">About</a></li>
-            <li class="wow animate__animated animate__zoomIn"><a href="index.html">Services</a></li>
+            <li class="wow animate__animated animate__zoomIn"><a href="#services">Services</a></li>
             <li class="wow animate__animated animate__zoomIn"><a href="project.html">Project</a></li>
-            <li class="wow animate__animated animate__zoomIn"><a href="index.html">Contact</a></li>
-            <li class="wow animate__animated animate__zoomIn"><a href=""><span class="login">Log in</span></a></li>
+            <li class="wow animate__animated animate__zoomIn"><a href="#contact">Contact</a></li>
+            <li class="wow animate__animated animate__zoomIn"><a href="login.html">Login</a></li> 
           </ul>
         </div>
-    </header>
+      </header>
 
     <div class="container" id="container">
         <div class="form-container sign-up-container">
@@ -111,10 +115,9 @@
               <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="index.html">Services</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="project.html">Project</a></li>
-                <li><a href="index.html">Contact</a></li>
-                <li><a href="login.html"></a>Login</li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
 
@@ -163,16 +166,24 @@
 
     <script>
         const signUpButton = document.getElementById('signUp');
-const logInButton = document.getElementById('logIn');
-const container = document.getElementById('container');
+        const logInButton = document.getElementById('logIn');
+        const container = document.getElementById('container');
 
-signUpButton.addEventListener('click', () => {
-    container.classList.add("right-panel-active");
-});
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
 
-logInButton.addEventListener('click', () => {
-    container.classList.remove("right-panel-active");
-});
+        logInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        toggle.addEventListener("click", () => {
+          menu.classList.toggle("active");
+        });
+
     </script>
       
 </body>

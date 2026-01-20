@@ -112,11 +112,6 @@ body {
 }
 
 
-
-/* .menu span{
-    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
-} */
-
 .menu-toggle {
   display: none;
   font-size: 24px;
@@ -1113,6 +1108,7 @@ body {
 
   /* FOOTER */
   .footer-contain {
+    width: 100%;
     flex-direction: column;
     gap: 30px;
   }
