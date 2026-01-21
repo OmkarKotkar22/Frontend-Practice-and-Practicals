@@ -33,9 +33,26 @@
     
 </head>
 
-<body>
+<script>
+  window.history.scrollRestoration = "manual";
+  window.scrollTo(0, 0);
 
-  
+  window.addEventListener("load", function(){
+    const loader = document.getElementById("loader");
+    loader.style.display = "0";
+    setTimeout(() => {
+      loader.style.display = "none";
+    },2000);
+    });
+</script>
+<body>
+  <!-- <div id="loader">
+    <div class="spinner"></div>
+  </div> -->
+
+
+  <div id="top-arrow"><a href="#top">&#x21E7;</a></div>
+    
   <div class="container-main">
     <div class="box">
       <header class="header">
@@ -48,12 +65,12 @@
 
         <div class="menu" id="menu">
           <ul>
-            <li class="wow animate__animated animate__zoomIn"><a href="index.html">Home</a></li>
-            <li class="wow animate__animated animate__zoomIn"><a href="about.html">About</a></li>
-            <li class="wow animate__animated animate__zoomIn"><a href="#services">Services</a></li>
-            <li class="wow animate__animated animate__zoomIn"><a href="project.html">Project</a></li>
-            <li class="wow animate__animated animate__zoomIn"><a href="#contact">Contact</a></li>
-            <li class="wow animate__animated animate__zoomIn"><a href="login.html">Login</a></li> 
+            <li class="li1 wow animate__animated animate__zoomIn"><a href="index.html">Home</a></li>
+            <li class="li2 wow animate__animated animate__zoomIn"><a href="about.html">About</a></li>
+            <li class="li3 wow animate__animated animate__zoomIn"><a href="#services">Services</a></li>
+            <li class="li4 wow animate__animated animate__zoomIn"><a href="project.html">Project</a></li>
+            <li class="li5 wow animate__animated animate__zoomIn"><a href="#contact">Contact</a></li>
+            <li class="li6 wow animate__animated animate__zoomIn"><a href="login.html">Login</a></li> 
           </ul>
         </div>
       </header>
@@ -300,33 +317,7 @@
     </div>
   </div>
 <script>
-  (function() {
-    const img = document.querySelector('.section1 img');
-    let scale = 1;
-    const maxScale = 1.2; // max zoom in scale
-    const minScale = 1;   // original scale
-    let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    window.addEventListener('scroll', function() {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-      if(scrollTop > lastScrollTop) {
-        // scrolling down - zoom in
-        scale += 0.01;
-        if(scale > maxScale) scale = maxScale;
-      } else {
-        // scrolling up - zoom out
-        scale -= 0.01;
-        if(scale < minScale) scale = minScale;
-      }
-
-      img.style.transform = `scale(${scale})`;
-
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-    }, false);
-  })();
-
-
+  
       const toggle = document.getElementById("menu-toggle");
       const menu = document.getElementById("menu");
 
