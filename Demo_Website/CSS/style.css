@@ -9,6 +9,17 @@
     letter-spacing: 2px;
 }
 
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 #loader{
     position: fixed;
     width: 100%;
@@ -76,6 +87,8 @@
     background-color: orangered;
     color: white;
     transform: scale(1.1);
+    box-shadow: 0px 0px 15px orangered;
+    transition: 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 body {
@@ -508,7 +521,7 @@ body {
 }
 
 .about-us{
-    background-image: url(../Imgs/about-business-team.jpg);
+    background-image: url(../Imgs//home/about-business-team.jpg);
     background-attachment: fixed;
     background-size: cover; 
     background-position: center;
@@ -896,7 +909,7 @@ body {
 }
 
 .contact textarea{
-    /* width: 80%; */
+    width: 80%;
     /* height: 150px; */
     margin: auto;
     border-radius: 5px;
@@ -911,43 +924,6 @@ body {
     /* margin-top: 15px; */
 }
 
-/* .service{
-    width: 100%;
-    min-height: 200px;
-    background-color: #0C3C60;
-    margin-top: 20px;
-}
-
-.dropdown button{
-    width: 75%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    background-color: #0C3C60;  
-    border-bottom: 1px solid white; 
-    color: white; 
-}
-
-.dropdown-menu{
-    width: 75%;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    background-color: #0C3C60;  
-    border-bottom: 1px solid white; 
-    color: white; 
-}
-
-.dropdown:hover{
-    background-color: none;
-} */
 .contact .c-btn{
     width: 80%;
     margin: auto;

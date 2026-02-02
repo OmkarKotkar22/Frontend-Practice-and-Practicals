@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+      <div id="top-arrow"><a href="#top">&#x21E7;</a></div>
       <header class="header">
           <div class="logo wow animate__animated animate__zoomIn">
             <h2><a href="index.html"><span>A</span>utono</a></h2>
@@ -64,6 +65,7 @@
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
                 <button class="signin-btn">Sign Up</button>
+                <a href="#" class="mobile-login-link">Already have an account? Login</a>
             </form>
         </div>
         <div class="form-container log-in-container">
@@ -78,6 +80,7 @@
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
                 <a href="#" style="text-decoration: none;">Forgot your password?</a>
+                <a href="#" class="mobile-signup-link">New user? Sign Up</a>
                 <button class="login-btn">Log In</button>
             </form>
         </div>
@@ -121,7 +124,7 @@
                 <p>Message</p>
             </div>
             <div>
-              <textarea class="wow animate__animated animate__fadeInUpBig" type="text" name="" id="" cols="90" rows="3" placeholder="Enter the Message Here ..." required autocomplete="off"></textarea>
+              <textarea class="wow animate__animated animate__fadeInUpBig" type="text" name="" id="" cols="100" rows="3" placeholder="Enter the Message Here ..." required autocomplete="off"></textarea>
             </div>
             <!-- <div class="service wow animate__animated animate__fadeInUpBig">
               <div class="dropdown">
@@ -230,7 +233,24 @@
           menu.classList.toggle("active");
         });
 
+
+        const containerBox = document.getElementById("container");
+        const mobileSignup = document.querySelector(".mobile-signup-link");
+        const mobileLogin = document.querySelector(".mobile-login-link");
+
+        if (mobileSignup) {
+          mobileSignup.addEventListener("click", (e) => {
+            e.preventDefault();
+            containerBox.classList.add("show-signup");
+          });
+        }
+
+        if (mobileLogin) {
+          mobileLogin.addEventListener("click", (e) => {
+            e.preventDefault();
+            containerBox.classList.remove("show-signup");
+          });
+        }
     </script>
-      
 </body>
 </html>

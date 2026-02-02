@@ -9,6 +9,39 @@
     letter-spacing: 2px;
 }
 
+#top-arrow{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    color: black;
+    font-size: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#top-arrow a{
+    text-decoration: none;
+    color: black;
+}
+
+#top-arrow a:hover{
+    padding: 5px 15px;
+    border-radius: 50%;
+    background-color: orangered;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px orangered;
+    transition: 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
 
 .container-main{
     width: 100%;
@@ -305,6 +338,10 @@ input[type="text"], input[type="email"], input[type="password"] {
     pointer-events: none;
 }
 
+.mobile-login-link,
+.mobile-signup-link{
+    display: none;
+}
 
 .container.right-panel-active .sign-up-container {
     transform: translateX(100%);
@@ -348,8 +385,6 @@ input[type="text"], input[type="email"], input[type="password"] {
 .overlay {
     background: #FF416C;
     background: linear-gradient(142.18deg, #3793FF 0%, #FE368A 98.85%);
-
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -500,7 +535,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 .contact textarea{
-    /* width: 80%; */
+    width: 90%;
     /* height: 150px; */
     margin: auto;
     border-radius: 5px;
@@ -515,43 +550,6 @@ input[type="text"], input[type="email"], input[type="password"] {
     /* margin-top: 15px; */
 }
 
-/* .service{
-    width: 100%;
-    min-height: 200px;
-    background-color: #0C3C60;
-    margin-top: 20px;
-}
-
-.dropdown button{
-    width: 75%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    background-color: #0C3C60;  
-    border-bottom: 1px solid white; 
-    color: white; 
-}
-
-.dropdown-menu{
-    width: 75%;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    background-color: #0C3C60;  
-    border-bottom: 1px solid white; 
-    color: white; 
-}
-
-.dropdown:hover{
-    background-color: none;
-} */
 .contact .c-btn{
     width: 80%;
     margin: auto;
@@ -616,6 +614,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     width: 30%;
     min-height: 150px;
     display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
 }
@@ -703,10 +702,10 @@ h3{
     box-shadow: 0 0 12px #0a66c2;
 }
 
-.github:hover {
-    /* background-color: white; */
+.youtube:hover {
+    background-color: red;
     color: white;
-    box-shadow: 0 0 12px #333;
+    box-shadow: 0 0 12px red;
 }
 
 .icon:hover {
@@ -732,9 +731,15 @@ h3{
     min-height: 40px;
     background-color: #072136;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+}
+
+.sign-up-container {
+  opacity: 0;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 576px) {
@@ -824,6 +829,11 @@ h3{
     transform: none !important;
     opacity: 1 !important;
     pointer-events: auto;
+  }
+
+  .mobile-login-link,
+  .mobile-signup-link{
+    display: block;
   }
 
   .overlay-container {
@@ -926,6 +936,86 @@ h3{
   .footer-menu,
   .footer-content {
     width: 45%;
+  }
+
+  .sign-up-container {
+    display: none;
+  }
+
+  .log-in-container {
+    width: 100%;
+    position: relative;
+  }
+
+  /* Disable desktop overlay animation on mobile */
+  .overlay-container {
+    display: none;
+  }
+
+  /* Links styling */
+  .mobile-signup-link,
+  .mobile-login-link {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #3F2EFF;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .mobile-login-link,
+  .mobile-signup-link{
+    display: block;
+  }
+
+  .mobile-signup-link:hover,
+  .mobile-login-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Disable desktop animation logic */
+  .form-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  /* Hide signup by default */
+  .sign-up-container {
+    display: none;
+  }
+
+  /* When signup is active */
+  .container.show-signup .log-in-container {
+    display: none;
+  }
+
+  .container.show-signup .sign-up-container {
+    display: block;
+  }
+
+  /* Remove overlay completely */
+  .overlay-container {
+    display: none;
+  }
+
+  /* Mobile links */
+  .mobile-signup-link,
+  .mobile-login-link {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #3F2EFF;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .mobile-signup-link:hover,
+  .mobile-login-link:hover {
+    text-decoration: underline;
   }
 }
 

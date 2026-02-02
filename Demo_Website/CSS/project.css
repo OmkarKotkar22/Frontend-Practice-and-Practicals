@@ -8,6 +8,40 @@
     letter-spacing: 2px;
 }
 
+#top-arrow{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    color: black;
+    font-size: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#top-arrow a{
+    text-decoration: none;
+    color: black;
+}
+
+#top-arrow a:hover{
+    padding: 5px 15px;
+    border-radius: 50%;
+    background-color: orangered;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px orangered;
+    transition: 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
 .container-main{
     width: 100%;
     min-height: 500px;
@@ -227,7 +261,7 @@
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    filter:blur(3px);
+    /* filter:blur(3px); */
 }
 
 .box .content{
@@ -337,43 +371,22 @@
     color: white; /* Change placeholder text color */
 }
 
-.service{
-    width: 100%;
-    min-height: 200px;
-    background-color: #0C3C60;
-    margin-top: 20px;
-}
-
-.dropdown button{
+.contact textarea{
     width: 75%;
+    /* height: 150px; */
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
     border-radius: 5px;
     border: none;
     outline: none;
     background-color: #0C3C60;   /* Change default background */
     border-bottom: 1px solid white; /* Add bottom border only */
     color: white; /* Change placeholder text color */
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin-top: 15px; */
 }
 
-.dropdown-menu{
-    width: 75%;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    background-color: #0C3C60;   /* Change default background */
-    border-bottom: 1px solid white; /* Add bottom border only */
-    color: white; /* Change placeholder text color */
-}
-
-.dropdown:hover{
-    background-color: none;
-}
 .contact .c-btn{
     width: 80%;
     margin: auto;
@@ -524,7 +537,7 @@
 .youtube:hover {
     color: white;
     background-color: red;
-    box-shadow: 0 0 12px #333;
+    box-shadow: 0 0 12px red;
 }
 
 .icon:hover {
